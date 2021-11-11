@@ -40,6 +40,9 @@ export default new Vuex.Store({
     },
 
     completeTodo ({ commit }, todo) {
+      if (!todo.isCompleted) {
+        alert('고생했어요!')
+      }
       commit('COMPLETE_TODO', todo)
     },
   },
