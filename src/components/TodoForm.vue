@@ -35,6 +35,19 @@ export default {
 
 <style>
 button {
-  margin-left: 3px;
+  margin-left: 5px;
+  padding: 5.5px 10px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 15px;
+  background: lightskyblue;
+}
+
+input {
+  padding: 5px 10px;
+  font-size: 15px;
+  border: 0.5px;
+  border-radius: 5px;
+  width: 40%;
 }
 </style>

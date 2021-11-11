@@ -13,7 +13,7 @@
     </todo-form>
 
     <h4>※ 사용방법 ※</h4>
-    <p>작성: 내용을 입력한 뒤 'enter' 키 입력 또는 '+' 버튼 클릭</p>
+    <p>작성: 내용 입력 후 'enter' 키 입력 또는 '+' 버튼 클릭</p>
     <p>완료: 작성된 todo 클릭</p>
     <p>제거: 'x' 버튼 클릭</p>
   </div>
@@ -38,27 +38,20 @@ export default {
       'uncompletedTodos',
     ])
   },
-  // computed: {
-  //   allTodos () {
-  //     return this.$store.getters.allTodos
-  //   },
-  //   completedTodos () {
-  //     return this.$store.getters.completedTodos
-  //   },
-  //   uncompletedTodos () {
-  //     return this.$store.getters.uncompletedTodos
-  //   },
-  // }
 }
 </script>
 
 <style>
+body {
+  background: #2c3e50;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
   margin-top: 60px;
 }
 </style>

@@ -1,13 +1,14 @@
 <template>
-  <div class="todo-item">
-    <span
-      :class="{ completed : todo.isCompleted }"
-      @click="completeTodo(todo)"
-    >
+  <div
+    class="todo-item"
+    @click="completeTodo(todo)"
+    :class="{ completed : todo.isCompleted }"
+  >
+    <span>
     {{ todo.title }}
     </span>
 
-    <button @click="removeTodo(todo)">-</button>
+    <button class="del-btn" @click="removeTodo(todo)">X</button>
   </div>
 </template>
 
@@ -24,24 +25,38 @@ export default {
       'removeTodo',
       'completeTodo',
     ])
-
-  //   removeTodo () {
-  //     this.$store.dispatch('removeTodo', this.todo)
-  //   },
-  //   completeTodo () {
-  //     this.$store.dispatch('completeTodo', this.todo)
-  //   }
   },
 }
 </script>
 
 <style>
 .todo-item {
-  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin: 10px auto;
+  padding: 10px 25px;
+  width: 60%;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.todo-item:hover {
+  background: lightskyblue;
+  color: black;
+}
+
+.del-btn {
+  font-weight: bold;
+  color: white;
+  background: none;
 }
 
 .completed {
-  color: lightgray;
-  text-decoration: line-through lightgray;
+  color: gray !important;
+  background: rgb(43, 43, 44) !important;
 }
 </style>
