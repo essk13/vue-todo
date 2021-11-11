@@ -11,6 +11,11 @@
 
     <todo-form>
     </todo-form>
+
+    <h4>※ 사용방법 ※</h4>
+    <p>작성: 내용을 입력한 뒤 'enter' 키 입력 또는 '+' 버튼 클릭</p>
+    <p>완료: 작성된 todo 클릭</p>
+    <p>제거: 'x' 버튼 클릭</p>
   </div>
 </template>
 
