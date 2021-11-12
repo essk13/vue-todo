@@ -12,6 +12,8 @@
     <todo-form>
     </todo-form>
 
+    <img src="./assets/child.png" alt="child">
+
     <h4>※ 사용방법 ※</h4>
     <p>작성: 내용 입력 후 'enter' 키 입력 또는 '+' 버튼 클릭</p>
     <p>완료: 작성된 todo 클릭</p>
@@ -53,5 +55,10 @@ body {
   text-align: center;
   color: white;
   margin-top: 60px;
+}
+
+img {
+  margin-top: 20px;
+  width: 30%;
 }
 </style>

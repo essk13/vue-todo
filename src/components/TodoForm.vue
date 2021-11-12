@@ -7,7 +7,7 @@
       @keyup.enter="addTodo"
     >
 
-    <button @click="addTodo">+</button>
+    <button class="input-btn" @click="addTodo">+</button>
   </div>
 </template>
 
@@ -41,6 +41,10 @@ button {
   border-radius: 5px;
   font-size: 15px;
   background: lightskyblue;
+}
+
+.input-btn:hover {
+  background: rgb(7, 156, 161);
 }
 
 input {

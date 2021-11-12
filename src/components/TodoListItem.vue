@@ -36,11 +36,11 @@ export default {
   align-items: center;
   text-align: left;
   margin: 10px auto;
-  padding: 10px 25px;
-  width: 60%;
+  padding: 8px 25px;
+  width: 50%;
   border: 1px solid white;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -55,8 +55,12 @@ export default {
   background: none;
 }
 
+.del-btn:hover {
+  background: rgb(221, 56, 56);
+}
+
 .completed {
-  color: gray !important;
-  background: rgb(43, 43, 44) !important;
+  color: rgb(200, 200, 200) !important;
+  background: rgb(119, 119, 119) !important;
 }
 </style>
